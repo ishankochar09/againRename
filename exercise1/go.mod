@@ -1,4 +1,4 @@
-module trainig/exercise1
+module updateRepoName
 
 go 1.19
 

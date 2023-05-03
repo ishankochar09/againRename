@@ -1,8 +1,8 @@
 package variant
 
 import (
-	"trainig/exercise1/internal/models"
-	"trainig/exercise1/internal/service"
+	"updateRepoName/internal/models"
+	"updateRepoName/internal/service"
 
 	"developer.zopsmart.com/go/gofr/pkg/errors"
 	"developer.zopsmart.com/go/gofr/pkg/gofr"
@@ -15,7 +15,6 @@ type variant struct {
 func NewVariantService(store service.VariantStore) *variant {
 	return &variant{store}
 }
-
 
 func (v *variant) AddVariant(ctx *gofr.Context, variant *models.Variant) (int, error) {
 	if variant.ProductID == "" {
@@ -32,6 +31,6 @@ func (v *variant) AddVariant(ctx *gofr.Context, variant *models.Variant) (int, e
 }
 
 func (v *variant) GetVariant(ctx *gofr.Context, productID, variantID string) (*models.Variant, error) {
-	res:= v.VariantSVC.GetVariant(ctx, productID, variantID)
+	res := v.VariantSVC.GetVariant(ctx, productID, variantID)
 	return res, nil
 }

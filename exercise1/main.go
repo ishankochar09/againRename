@@ -1,14 +1,13 @@
 package main
 
 import (
-	"trainig/exercise1/internal/handler/product"
-	"trainig/exercise1/internal/handler/variant"
+	"updateRepoName/internal/handler/product"
+	"updateRepoName/internal/handler/variant"
 
-	productSVC "trainig/exercise1/internal/service/product"
-	variantSVC "trainig/exercise1/internal/service/variant"
-
-	productSTR "trainig/exercise1/internal/store/product"
-	variantSTR "trainig/exercise1/internal/store/variant"
+	productSVC "updateRepoName/internal/service/product"
+	variantSVC "updateRepoName/internal/service/variant"
+	productSTR "updateRepoName/internal/store/product"
+	variantSTR "updateRepoName/internal/store/variant"
 
 	"developer.zopsmart.com/go/gofr/pkg/gofr"
 )

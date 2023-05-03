@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	reflect "reflect"
 	"testing"
-	"trainig/exercise1/internal/models"
-	"trainig/exercise1/internal/handler"
+	"updateRepoName/internal/handler"
+	"updateRepoName/internal/models"
 
 	"developer.zopsmart.com/go/gofr/pkg/errors"
 	"developer.zopsmart.com/go/gofr/pkg/gofr"
@@ -45,7 +45,7 @@ func TestAddProduct(t *testing.T) {
 			body:          nil,
 		},
 	}
-	
+
 	for _, tc := range testCases {
 		r := httptest.NewRequest("POST", "/product", bytes.NewReader(tc.body))
 		w := httptest.NewRecorder()

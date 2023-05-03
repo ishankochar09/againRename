@@ -1,14 +1,13 @@
 package variant
 
-
 import (
 	"bytes"
 	"net/http"
 	"net/http/httptest"
 	reflect "reflect"
 	"testing"
-	"trainig/exercise1/internal/models"
-	"trainig/exercise1/internal/handler"
+	"updateRepoName/internal/handler"
+	"updateRepoName/internal/models"
 
 	"developer.zopsmart.com/go/gofr/pkg/errors"
 	"developer.zopsmart.com/go/gofr/pkg/gofr"
@@ -92,7 +91,7 @@ func TestGetVariant(t *testing.T) {
 			desc:      "Failure",
 			productid: "1",
 			varid:     "2",
-			mock:      MockInterface.EXPECT().GetVariant(gomock.Any(), gomock.Any(), gomock.Any()).Return(nil,errors.Error("error")),
+			mock:      MockInterface.EXPECT().GetVariant(gomock.Any(), gomock.Any(), gomock.Any()).Return(nil, errors.Error("error")),
 			expOut:    nil,
 			Exerr:     errors.Error("error"),
 		},
