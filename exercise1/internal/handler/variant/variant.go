@@ -1,8 +1,8 @@
 package variant
 
 import (
-	"trainig/exercise1/internal/models"
-	"trainig/exercise1/internal/handler"
+	"updateRepoName/internal/handler"
+	"updateRepoName/internal/models"
 
 	"developer.zopsmart.com/go/gofr/pkg/errors"
 	"developer.zopsmart.com/go/gofr/pkg/gofr"
@@ -35,7 +35,7 @@ func (v *Variant) AddVariant(ctx *gofr.Context) (interface{}, error) {
 	return v.Vservice.AddVariant(ctx, variant)
 }
 
-func (v * Variant) GetVariant(ctx *gofr.Context) (interface{}, error) {
+func (v *Variant) GetVariant(ctx *gofr.Context) (interface{}, error) {
 	param := ctx.PathParam("pid")
 
 	paramID := ctx.PathParam("vid")

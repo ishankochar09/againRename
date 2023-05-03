@@ -2,8 +2,8 @@ package product
 
 import (
 	"strconv"
-	"trainig/exercise1/internal/handler"
-	"trainig/exercise1/internal/models"
+	"updateRepoName/internal/handler"
+	"updateRepoName/internal/models"
 
 	"developer.zopsmart.com/go/gofr/pkg/errors"
 	"developer.zopsmart.com/go/gofr/pkg/gofr"
@@ -31,7 +31,6 @@ func (p *Product) AddProduct(ctx *gofr.Context) (interface{}, error) {
 
 func (p *Product) GetProduct(ctx *gofr.Context) (interface{}, error) {
 	product := &models.Product{}
-	
 
 	param := ctx.PathParam("pid")
 

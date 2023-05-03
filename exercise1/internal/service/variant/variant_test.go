@@ -6,8 +6,8 @@ import (
 	reflect "reflect"
 	"strconv"
 	"testing"
-	"trainig/exercise1/internal/models"
-	"trainig/exercise1/internal/service"
+	"updateRepoName/internal/models"
+	"updateRepoName/internal/service"
 
 	"developer.zopsmart.com/go/gofr/pkg/errors"
 	"developer.zopsmart.com/go/gofr/pkg/gofr"

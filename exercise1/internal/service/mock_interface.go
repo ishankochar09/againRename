@@ -6,7 +6,7 @@ package service
 
 import (
 	reflect "reflect"
-	models "trainig/exercise1/internal/models"
+	"updateRepoName/internal/models"
 
 	gofr "developer.zopsmart.com/go/gofr/pkg/gofr"
 	gomock "github.com/golang/mock/gomock"

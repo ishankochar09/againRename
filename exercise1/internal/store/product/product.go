@@ -2,7 +2,7 @@ package product
 
 import (
 	"net/http"
-	"trainig/exercise1/internal/models"
+	"updateRepoName/internal/models"
 
 	"developer.zopsmart.com/go/gofr/pkg/errors"
 	"developer.zopsmart.com/go/gofr/pkg/gofr"

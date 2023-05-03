@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"log"
 	"testing"
-	"trainig/exercise1/internal/models"
+	"updateRepoName/internal/models"
 
 	"developer.zopsmart.com/go/gofr/pkg/datastore"
 	"developer.zopsmart.com/go/gofr/pkg/gofr"
